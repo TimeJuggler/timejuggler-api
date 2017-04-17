@@ -1,0 +1,42 @@
+logging:
+    level:
+        org:
+            hibernate:
+                SQL: debug
+            springframework:
+                web: DEBUG
+server:
+    port: 4349
+spring:
+    application:
+        name: meeting
+    datasource:
+        driverClassName: org.h2.Driver
+        initialize: true
+        password: atropos
+        url: jdbc:h2:mem:ATROPOS;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        username: atropos
+    h2:
+        console:
+            enabled: true
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        hibernate:
+            ddl-auto: create-drop
+            use-new-id-generator-mappings: true
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
+management:
+  security:
+    enabled: false

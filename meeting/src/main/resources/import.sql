@@ -1,0 +1,15 @@
+--insert into meeting (id, from_date, to_date) values (1, to_timestamp('20-03-2017 10:00', 'DD-MM-YYYY HH24:MI'), to_timestamp('20-03-2017 11:00','DD-MM-YYYY HH24:MI'));
+--
+--insert into meeting (id, from_date, to_date) values (2, to_timestamp('20-03-2017 11:00', 'DD-MM-YYYY HH24:MI'), to_timestamp('20-03-2017 12:00','DD-MM-YYYY HH24:MI'));
+--
+--insert into meeting (id, from_date, to_date) values (3, to_timestamp('20-03-2017 14:00', 'DD-MM-YYYY HH24:MI'), to_timestamp('20-03-2017 14:30','DD-MM-YYYY HH24:MI'));
+--
+--insert into meeting (id, from_date, to_date) values (4, to_timestamp('20-03-2017 15:00', 'DD-MM-YYYY HH24:MI'), to_timestamp('20-03-2017 16:00','DD-MM-YYYY HH24:MI'));
+--
+--insert into meeting (id, from_date, to_date) values (5, to_timestamp('20-03-2017 16:00', 'DD-MM-YYYY HH24:MI'), to_timestamp('20-03-2017 17:00','DD-MM-YYYY HH24:MI'));
+--
+--insert into meeting_attendees values (1,'12');
+--insert into meeting_attendees values (2,'23');
+--insert into meeting_attendees values (3,'25');
+--insert into meeting_attendees values (4,'27');
+--insert into meeting_attendees values (5,'567');

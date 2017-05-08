@@ -10,8 +10,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
+        <module>configuration</module>
         <module>eureka-server</module>
+        <module>zuul-server</module>
         <module>meeting</module>
+        <module>user</module>
     </modules>
 
 

@@ -11,10 +11,14 @@ services:
     ports:
      - "8765:8765"
      - "9090:9090"
-  meeting:
-    image: meeting
+  user:
+    image: user
     depends_on:
      - eureka-server
      - zuul-server
-    ports:
-     - "4349:4349"
+  meeting:
+    image: meeting
+    depends_on:
+     - user
+     - eureka-server
+     - zuul-server

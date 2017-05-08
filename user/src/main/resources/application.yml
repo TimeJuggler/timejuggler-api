@@ -6,15 +6,15 @@ logging:
             springframework:
                 web: DEBUG
 server:
-    port: 4349
+    port: 4359
 spring:
     application:
-        name: meeting
+        name: user
     datasource:
         driverClassName: org.h2.Driver
         initialize: true
         password: atropos
-        url: jdbc:h2:mem:ATROPOS;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        url: jdbc:h2:mem:USERS;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
         username: atropos
     h2:
         console:

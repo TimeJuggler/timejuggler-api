@@ -13,10 +13,13 @@ zuul:
   routes:
     meeting:
       path: /meeting/**
-      url: http://meeting:4349
+      url: http://localhost:4349
+    user:
+      path: /user/**
+      url: http://localhost:4359
 
 server:
-  port: 8765
+  port: 9090
 
 logging:
   level:
@@ -25,11 +28,11 @@ logging:
 
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 30
   client:
     serviceUrl:
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
     healthcheck:
       enabled: true
     lease:
@@ -38,3 +41,6 @@ eureka:
 spring:
   application:
     name: zuul-server
+  cloud:
+    config:
+      enabled: false
